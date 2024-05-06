@@ -1,0 +1,3 @@
+![alt text](./images/image.png)
+### 2.1
+This Rust broadcast chat application consists of a server and clients communicating over WebSockets. The server listens for TCP connections, upgrades them to WebSocket sessions, and handles messaging via a broadcast channel, allowing messages sent by one client to be received by all others. Each client, upon connecting, can send messages and receive broadcasts from the server, displaying them in real-time. The application leverages tokio for asynchronous I/O and task management, with tokio::select! enabling concurrent handling of user input and network messages. This setup ensures efficient, real-time communication across multiple clients through a central server.
